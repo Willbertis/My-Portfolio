@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+.g-base {
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 1200px;  
+    background: white;
+    padding: 20px;
+    justify-self: center; 
+}
+
+.g-heading {
+    text-decoration: underline;
+}
+
+.g-heading, #s-footer{
+    text-align: center;
+    background-color: lightgray;
+    grid-column: span 2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+ul li {
+    margin: 4px;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+section {
+    border: 2px solid;
+    border-color: black;
+    margin: 3px;
+    padding-left: 4px;
+}
+
+
+@media (max-width: 600px) { 
+    .grid-container { 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    } 
+    section { 
+        margin: 8px; padding: 10px; 
+    }
+    .g-heading, #s-footer {
+        grid-column: span 1;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+}
+
